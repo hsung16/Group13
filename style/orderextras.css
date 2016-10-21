@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 1080px) {
+	#mainbody:before {
+		display: none;
+	
+	}
+}
+
+.instruction {
+	font-size: 6pt;
+}

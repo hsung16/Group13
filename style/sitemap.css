@@ -1,0 +1,31 @@
+/*content spacing*/
+#map h1{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 50px;
+}
+
+/*list items*/
+#map li{
+	font-size: 15pt;
+}
+
+/*list 1 items*/
+.level1{
+	padding-left: 30px;
+}
+
+/*list 2 items*/
+.level2{
+	padding-left: 40px;
+}
+
+/*list 3 items*/
+.level3{
+	padding-left: 50px;
+}
+/*list 4 items*/
+.level4{
+	padding-left: 60px;
+}
+/* Validated */

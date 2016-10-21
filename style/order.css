@@ -1,0 +1,397 @@
+#mainbody > div {
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#mainbody > div:first-child {
+	margin-left: 5px;
+}
+#mainbody > div:last-child {
+	margin-right: 5px;
+}
+.hover:hover {					/* Hover just adds the default hover style to links */
+
+	cursor: pointer;
+	background-color: rgb(0, 0, 0) !important;
+}
+
+.round-corners {				/* For all items that need a subtle corner rounding */
+	border-radius: 3px;
+}
+
+.total td {						/* The extra space in the order summary, ensures total and tax are at the bottom below the line */
+	/* border-bottom: 1px solid darkgray; */
+	min-height: 7px;
+	margin-bottom: 5px;
+	width: 255px;
+}
+
+.totalText {
+	font-weight: bold;
+}
+.totals:first-child td {
+	border-top: 2px solid darkgray;
+}
+.totals td {
+	padding: 3px 0px 3px 8px;
+}
+
+#orderTotals {
+	width: 100%;
+}
+
+.price {
+	text-align: right;
+	padding-right: 5px !important;
+}
+
+.blackList {					/*	Replicating the white-on-black list object in our milestone designs */
+	border: 1px solid white;
+	background: black;
+	color: white;
+	border-radius: 0px;
+	margin-top: 20px;
+	padding: 3px;
+	display: table;
+	list-style-type: none;
+	font-weight: bold;
+	box-shadow: 0px 0px 5px 1px black;
+}
+.blackList ul {
+	margin: 0px;
+}
+.blackList li {
+	padding: 4px;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+/* Horizontal navigation current page */
+.selector_f{
+	border-bottom: 1px solid #FFB808;
+	padding-bottom: 4px;
+}
+
+.top {						/* Aligns content in td elements to top */
+	vertical-align: top;
+}
+
+.center {
+	text-align: center;
+}
+
+.centerCol {				/* A single center column for small webpages (login, register, etc) */
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.space {					/* Just a general spacer class for elements */
+    padding: 20px;
+}
+
+.twoCol {					/* Like centerCol, but used for a table to create two columns, the left aligned right and vice versa. */
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.twoCol > tbody > tr > td:first-child {
+    text-align: right;
+}
+
+.twoCol > tbody > tr > td {
+    width: 50%;
+    padding: 10px;
+}
+
+.twoCol_separator > tbody > tr > td:first-child {	/* Add a separator for twoCol table */
+    border-right: 1px solid;
+}
+
+.largeRows {
+    padding: 20px;
+}
+
+.medRows {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.underline {								/* Replicating the 'underline' heading style in our milestone design */
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+	margin-top: 0px;
+}
+
+.min_height {								/* Set element to the minimum it can be */
+	height: 1px;
+}
+
+.order_datetime {							/* Width for  darkgrayorder date / time inputs */
+	width: 120px;
+}
+
+
+.ui-input {									/* General style for input text / password etc */
+    width: 150px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.btn-small {
+	display: inline-block;
+	padding: 3px;
+	margin: 2px;
+	border-radius: 5px;
+	margin: 0px;
+	cursor: pointer;
+}
+.icon-vertical {
+	clear: both;
+	float: left;
+}
+
+.halfWidth {								/* For elements such as two buttons to take just under 50% width */
+	width: 48%;
+}
+
+.medium {
+	width: 100px;
+}
+
+
+.receipt, #receiptTable {								/* Style unique to the order receipt page */
+    width: 500px;
+    margin: 0 auto;
+    background: white;
+	opacity: 0.8;
+    color: black;
+	padding: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.receipt tr, #receiptTable tr {
+    border-bottom: 2px solid darkGray;
+}
+.receipt td, #receiptTable td {
+    padding: 20px;
+}
+
+#cat_nav {								/* category navigation in the order blackList menu */
+	vertical-align: top;
+}
+
+#orderGroups a{
+	border-bottom: solid 1px black;
+}
+
+#orderGroups a:hover{
+	border-bottom: solid 1px #FFB808;
+}
+
+#orderGroups {
+	margin-top: 58px;
+}
+
+#orderGroups li a {
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+
+@media screen and (max-width: 1080px) {
+	#mainbody:before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 20px;
+		font-size: 200%;
+		font-weight: bold;
+		/* content: "Choose a Category"; */
+	
+	}
+	#orderGroups ul li {
+		display: inline-block;
+		width: 160px;
+	}
+	#orderGroups ul li a {
+		padding: 15px;
+		display: block;
+		border-right: 1px solid #3C2802;
+	}
+}
+
+#orderMenu {
+	min-width: 400px;
+}
+
+@media screen and (min-width: 1081px) {
+
+	#orderSummaryDetails {
+		position: absolute;
+		right: 0;
+		margin-right: 25px !important;
+	}
+}
+
+#orderSummaryDetails h2 {
+	margin-top: 25px;
+}
+
+#orderSummary {
+	max-height: 80%;
+}
+
+#orderSummary, #orderDetails {
+	width: 255px; 
+	margin-top: 0px;
+}
+
+#orderDetails.nowidthrestriction {
+	width: auto;
+}
+
+#order{
+	padding-top: 10px;
+}
+#orderItems {
+	height: 500px;
+	width: 100%;
+	overflow-y: auto;
+	display: block;
+}
+
+#orderItems td {
+	padding: 4px;
+}
+
+#orderItems .lineitem {
+	height: 20px;
+	font-size: 85%;
+}
+
+#orderItems .lineitem td:first-child {
+	width: 25px;
+	padding: 4px;
+}
+
+#orderItems .lineitem td {
+	border-bottom: 1px solid darkgray;
+}
+
+#orderItems .lineitem .quantity {
+	padding-right: 2px;
+	width: 26px;
+}
+
+#selection_table {							/* Table grid showing selection options for menu categories */
+	border-top: 1px solid white;
+	margin-bottom: 30px;
+	width: 500px;
+	box-shadow: 0px 0px 5px 1px black;
+}
+#selection_table td {
+	border-bottom: 1px solid white;
+	width: 300px;
+	height: 170px;
+	position: relative;
+	padding: 0px;
+	border-collapse: collapse;
+	
+}
+#selection_table tr td:first-child {	/* First of each row */
+	border-right: 1px solid white;
+}
+#selection_table tr:last-child td {		/* Last row */
+	border-bottom: 0px;
+}
+
+.itemBlock {							/* Block of the selection table that contains the menu item */
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-image: url('../images/opacity_100.png');
+	background-repeat: repeat;
+
+}
+
+.itemBlock > h3, .itemBlock > p, .itemBlock > div {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.itemBlock_footer {						/* Contains price and add to cart button */
+	position: absolute;
+	bottom: 0;
+	width: 232px;
+	padding-bottom: 5px;
+}
+
+.itemBlock_footer div {
+	display: inline-block;
+}
+
+.itemBlock_footer .price {
+	float: right;
+	padding-top: 5px;
+	font-style: italic;
+}
+
+.description {							/* For description text - italic and color set */
+	font-style: italic;
+	font-size: 12px;
+	margin-top: 0px;
+	color: #FFFFFF;
+}
+
+.ui-button {							
+	font-family: Arial;
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+    margin-right: .1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+	border-radius: 3px;
+
+    font-weight: normal;
+    color: #373737;
+    background: #f7f7f7;
+
+
+    background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);
+}
+div.ui-button {
+	padding: 4px !important;
+}
+
+
+#orderDetails td {
+	padding-top: 20px;
+}
+
+.myorder {
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.myorder:hover {
+	background: black;
+	background: rgba(0,0,0,0.5);
+}
+
+.myorder_item {
+	text-align: left;
+	padding: 20px;
+	margin: 0 auto;
+}

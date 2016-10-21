@@ -1,0 +1,388 @@
+/* importing google font */
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+
+@media screen and (min-height: 769px) {
+	#main > #mainbody {
+		min-height: 570px;
+	}
+}
+
+@media screen and (min-height: 869px) {
+    #main > #mainbody {
+        min-height: 685px;
+    }
+}
+
+
+@media screen and (min-height: 969px) {
+	#main > #mainbody {
+		min-height: 830px;
+	}
+	
+}
+
+
+@media screen and (max-width: 1050px) {
+	#h_navbar, #h_navbar li {
+		display: inline-block !important;
+	}
+	#h_navbar ul {
+		margin-bottom: 0px; 
+	}
+	#header {
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		min-width: 0px;
+		min-height: 110px;
+	}
+	#headertext {
+	}
+}
+
+
+@media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 300dpi) {
+	#headertext {
+		top: 0;
+
+		float: none;
+        display: inline-block;
+        position: relative;
+	    margin-top: 3px !important;
+
+	}
+
+	#acc {
+		float: left !important;
+		margin-left: 50px;
+	}
+	#logo {
+		margin: 0 auto;
+		float: none !important;
+		text-align: center;
+	}
+	#logo img {
+		max-width: 100%;
+	}
+	#h_navbar {
+		width: 100%;
+	}
+	#h_navbar li {
+		width: 24%;
+		padding-bottom: 0px !important;
+	}
+	#h_navbar ul li a {
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+		display: block;
+	}
+}
+
+/* settings for whole page */
+html {
+	color: #FFFFFF;
+	font-family: Tahoma, "Trebuchet MS", "Times New Roman Bold";
+	background-image: url(../images/collage4.jpg);
+}
+
+/* setting the content */
+html, body{
+	overflow-x: hidden;
+	min-height: 100%;
+	height: auto;
+	min-width: 480px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* setting the body */
+body {
+	overflow-x: hidden;
+}
+
+/* body anchors */
+body a {
+	color: #FFFFFF;	
+	text-decoration: none;
+}
+
+/* resetting settings list and unorder list*/
+li, ul {
+	list-style-type: none;
+	padding: 0px;
+}
+/* resetting settings for headings */
+h1, h2, h3, h4, h5 {
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+/*space between h1 and header*/
+h1 {
+	margin-top: 20px;
+}
+
+/*space between h2 and header*/
+h2 {
+	margin-top: 30px;
+}
+
+/* settings for table */
+table, tr, td, tbody {
+	border-collapse: collapse;
+}
+
+/* Header */
+#header {
+	background-color: #000000;
+	max-width: 100%;
+	margin: 0;
+    margin-top: -7px;
+	margin-left: -2px; 
+	height: auto;
+	padding: 10px; 
+	padding-bottom: 5px;
+	height: auto;
+	min-width: 480px;
+	box-shadow: 0px 0px 10px #000000;
+	z-index: 5;
+}
+
+/* Logo */
+#logo {
+	float:left;
+}
+
+/* Logo image */
+#logo img {
+	padding-top: 20px;
+}
+
+/* Header content */
+#headertext {
+	color: #FFFFFF;
+	float: right;
+	display:inline;
+	font-size: 10pt;
+	width: 245px;
+	margin-top: 7px;
+}
+
+/*Text Beside User Logo*/
+#headertext2 {
+	color: #FFFFFF;
+	display:inline;
+	font-size: 10pt;
+	float: right;
+	margin-top: 7px;
+}
+
+#headertext p {
+	padding-left: 80px;
+}
+/* Header social media */
+#acc {
+	float:right;
+	margin-top: 1%;
+	margin-right: 5%;
+	font-size: 13pt;
+	color: #FFFFFF;
+	
+}
+
+/*Social Media spacing*/
+#acc img{
+	padding-left: 5px;
+}
+
+/* Horizontal navigation bar list items */
+#h_navbar li {
+	list-style-type: none;
+	display: inline;
+	padding-bottom: 16px; 
+	border-bottom: 4px solid black;
+}
+
+/* Horizontal navigation bar anchors */
+#h_navbar li a{
+	text-decoration: none;
+	color: #FFB808;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	padding-right: 40px;
+	padding-left: 40px;	
+	border-bottom: 2px solid black;
+}
+#h_navbar li:not(:last-child) a {
+	border-right: 1px solid #2C1802;
+}
+
+
+
+/* Horizontal navigation bar last specific setting */
+#h_navbar li:last-child { 
+	border: 0px;
+}
+
+/* Horizontal navigation hover effect */
+#h_navbar a:hover{
+	/* width: 50px; */
+	border-bottom: 2px solid #FFB808;
+	color: #FFB808;
+}
+
+/* Horizontal navigation current page */
+#h_navbar li.selector_h{
+	border-bottom: 4px solid #FFB808;
+	/* padding-bottom: 16px; BT - This adds 16px extra space to the menu, but only for pages that have this class applied. 
+								Moved to #h_navbar li above 
+	*/ 
+}
+
+/* clear float settings */
+.clear {
+	clear:both;
+}
+
+/* Main content */
+#main{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 800px;
+	height: auto;
+	overflow: hidden;
+	z-index: 4;
+	background-color: darkred;
+    background-image: url(../images/StickTexture.png);
+    background-repeat: repeat-y;
+    padding-bottom: 15px;
+}
+
+/* Order Now Button */
+div.ordernow {
+	position:absolute;
+	top: 325px;
+	right: 150px;
+}
+
+/* Content body */
+#mainbody {
+	max-width: 1000px;
+	min-height: 500px;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	padding-top: 0px;
+	border: 1px solid #000000;
+	border-top: none;
+	border-bottom: none;
+	z-index: 3;
+}
+
+/* Content text */
+#maintext{
+	max-width: 708px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Footer */
+#footer {
+	background-color: #000000;
+	width: 100%;
+	padding: 10px;
+	padding-left: 0px;
+	padding-top: 0px;
+	position: relative;
+	bottom: 0;
+	box-shadow: 0px 0px 10px #000000;
+	z-index: 4;	
+}
+
+/* Footer inner box */
+#footertext {
+	max-width: 1000px;
+	display: table;
+	margin: 0 auto;
+}
+
+/* Footer content box */
+#footerbox {
+	margin-left: auto;
+}
+
+/* Footer list formatting*/
+.footercolumn {
+	float: left;
+	position: relative;
+	text-align: left;
+	width: 135px;
+	margin-top: 20px;
+	margin-left: 10px;
+	max-width: 110px;
+}
+
+/* Footer list anchor */
+.footercolumn li a {
+	color: #BBBBBB;
+}
+
+/* Footer list hover */
+.footercolumn a:hover {
+	color: #DDDDDD;
+}
+/* Footer list heading 3 */
+.footercolumn h3 {
+	margin: 0px;
+	padding-bottom: 20px;
+}
+
+/* Footer list unordered list*/
+.footercolumn ul {
+	padding-left: 0px;
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+/* Footer list item */
+.footercolumn li {
+	list-style-type: none;
+}
+
+/* Footer menu */
+#footermenu ul { /* No left padding for first one */
+	padding-left: 0px;
+}
+
+/* Footer order */
+#footerorder {
+	padding-left: 10px;
+	border-left: 1px solid gray;
+	min-height: 120px;
+}
+
+/* Copyright text */
+#copyright {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 10px;
+	color: #7e7e78;
+	font-style: italic;
+	position: absolute;
+	right: 0;
+	margin-top: -20px;
+	margin-right: 55px;
+	text-align:center;
+	text-decoration: none;
+}
+
+/* Copyright paragraph */
+#copyright p {
+	margin: 0px;
+}
+/*Validated*/
